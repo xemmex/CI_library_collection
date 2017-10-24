@@ -8,10 +8,10 @@ install twig by calling composer require twig/twig
 copy this file to application/libraries
 create view file in application views, example = my_template.html
 load this template in application/config/autoload.php
-or you can call by loading in each controller $this->load->library('twigTemplate');
-render template example = $this->twigtemplate->render('my_template',array('data1'=>$mydata1));
+or you can call by loading in each controller $this->load->library('Template');
+render template example = $this->template->render('my_template',array('data1'=>$mydata1));
 */
-class TwigTemplate {
+class Template {
     function render($tpl,$data=array()){
 
 		$this->CI =& get_instance();
